@@ -1,7 +1,9 @@
+```javascript
 function getStyle(obj,attr){
 	if(obj.currentStyle){
-		return obj.currentStyle[attr];//Õë¶Ô IEä¯ÀÀÆ÷
+		return obj.currentStyle[attr];//IE
 	}else{
-		return getComputedStyle(obj,false)[attr];//Õë¶Ôfirefoxä¯ÀÀÆ÷
+		return getComputedStyle(obj,false)[attr];//ç«ç‹
 	}
 }
+```
